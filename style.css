@@ -11,12 +11,14 @@
 html{
     /* 1rem = 10px */
     font-size: 62.5%;
+    scroll-behavior: smooth; /* helps to make smooth scrolling.*/
 }
 body {  
     width: 100vw;
     height: auto;
     overflow-x:hidden;
     /*  min-height: 100vh;    */
+    scroll-snap-type: Y mandatory; /* y =  vertically, after this go to particular page to show single page at a time.*/
 }
 
 
@@ -51,6 +53,10 @@ li {
     --test : #070101;
     --btn-hover-bg-color: #022359;
     --btn-box-shadow: rgba(30, 30, 34, 0.2) 2px 5px 20px 3px;
+}
+
+section {
+    scroll-snap-align: center; /* shows the particular section at a time.*/
 }
 
 /*      Nav Bar     */
