@@ -7,7 +7,7 @@
         <!--Very important for responsive. here width is equal to website width. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!--Here meta description tag is used to provide the description to website while hostion it in the server or during google search-->
+    <!--Here meta description tag is used to provide the description to website while hoisting it in the server or during google search-->
      <meta name="description" content="Welcome to Akshita EduHub, your gate to knowledge and skill development.
      We are dedicated to providing high-quality, accessible education for learners
      of all ages and backgrounds.">
@@ -21,10 +21,14 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!--AOS plugin. -->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+
     <!--    Nav Bar     -->
     <header class="section-navbar">
         <div class="container">
@@ -53,7 +57,7 @@
                         <!--Here you will directly move to the contact page.-->
                         <!--<a class="nav-link" href="contact.html"> contact </a>-->
 
-                        <!--By this, when you click on contact you will go to footer section and afterclickin on start now you will move to the contact page
+                        <!--By this, when you click on contact you will go to footer section and after clicking on start now you will move to the contact page
                             here page via id using # -->
                         <a class="nav-link" href="#section-contact--homepage"> contact </a>
                     </li>
@@ -84,12 +88,14 @@
 
                 <div class="section-hero--image">
                     <figure>
-                        <img src="https://th.bing.com/th/id/OIP.ix2DOQIpOkoBoX2V14NmEAHaEJ?rs=1&pid=ImgDetMain" alt="3D Character Image">
+                        <img src="https://th.bing.com/th/id/OIP.ix2DOQIpOkoBoX2V14NmEAHaEJ?rs=1&pid=ImgDetMain" alt="3D Character Image"
+                        data-aos="fade-up" 
+                        >       <!--This is AOS plugin to add animation . copy it from aos plugin. add this in area where yo need it //// -->
                     </figure>
                 </div>
             </div>
         </div>
-        <!-- Here we are using Shape divider app to insert wave. go ina app, chick on cloud fig, insert code to html and css-->
+        <!-- Here we are using Shape divider app to insert wave. go in  app, chick on cloud fig, insert code to html and css-->
         <div class="custom-shape-divider-bottom-1740735801">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
                 <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
@@ -110,11 +116,10 @@
         </div>
 
         <div class="container grid grid-three--cols">
-            <div class="about-div">
+            <div class="about-div" data-aos="fade-up" >
                 <div class="icon">
                     <img src="https://th.bing.com/th/id/OIP.aKVB5fSTTYB968GlAjKmCAHaHa?rs=1&pid=ImgDetMain" alt="Akshita Hub research team">
-                </div>
-                
+                </div>             
                 <h3 class="section-common--title">Research</h3>
                 <p>
                     We start by learning what you need. We look at what's new an exciting in learning and choose 
@@ -122,7 +127,7 @@
                 </p>
             </div>
 
-            <div class="about-div">
+            <div class="about-div" data-aos="fade-up" >
                 <div class="icon">
                     <img src="https://th.bing.com/th/id/OIP.KXLhfQr_rZpWq7eqliGEWQHaHa?w=500&h=500&rs=1&pid=ImgDetMain" alt="Akshita Hub research team">
                 </div>
@@ -134,7 +139,7 @@
                 </p>
             </div>
 
-            <div class="about-div">
+            <div class="about-div" data-aos="fade-up" >
                 <div class="icon">
                     <img src="https://th.bing.com/th/id/OIP.5U8YoNtyzLlSherNdocyKQHaHx?rs=1&pid=ImgDetMain" alt="Akshita Hub research team">
                 </div>
@@ -235,7 +240,7 @@
             </p>
         </div>
 
-        <div class="container grid grid-three--cols">
+        <div class="container grid grid-three--cols" data-aos="fade-up" >
             <!--Left Part of code -->
             <div class="choose-left--div text-align--right">
 
@@ -269,7 +274,7 @@
 
             <div class="choose-center--div">
                 <figure>
-                    <img src="https://files.oaiusercontent.com/file-9QNSrrkh8yD2DQfpdg5W1U?se=2025-03-01T08%3A47%3A25Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3Ded0fc703-6dda-4765-b930-67fcb621b34a.webp&sig=EOPI2yi1tiKAfkQqt4Ur3aGGp3S9CxNd10OdnsWk5Jc%3D" alt=" New website. ">
+                    <img src="https://img.freepik.com/premium-photo/learning-reimagine-with-holographic-classrooms-integrated-virtual-reality_968519-8650.jpg" alt="">
                 </figure>
             </div>
 
@@ -324,6 +329,12 @@
     </div>
 
     <!--    End section    -->
+
+    <!-- This AOS Script. -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 
     <footer>
         <div class="conatiner grid grid-four--cols">
@@ -391,8 +402,16 @@
 
 <!--Website testing = a. Lighthouse testing. b. https://pagespeed.web.dev// . c. https://gmetrix.com//-->
 <!-- 1. For LIGTHHOUSE = i. go to inspect,, ii.left click on +,,, iii.  click on Lighthouse,,,, iv. click on Analyze Page Load. -->
-<!--2. gmetrix.com === google search-->
+<!--2. gmetrix.com === google search = add your website link-->
 
 <!--Minifying and comparision.= used to give the code in minifying version. search== css minifying. i. go to css minifier ii. copy the css code and paste in it-->
 
 <!--Hosting a website. use netlify for free. or hostinger server for premimium.-->
+
+<!--Reducing render blocking = most of website works in synchronous way which means when ever the first work is not done it will not operate the second one. so to overcome this
+we use render blocking. Don't use the font import instead of it use their links. by using import it blocks the website.
+-->
+
+<!-- AOS Plugin = for animation = go to website of michalsnik. scroll down copy basic copy and paset befor head tag.
+  and copy script tag and past in
+-->
